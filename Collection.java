@@ -12,6 +12,7 @@ class FileCollectionUtil
 {
 	public void fileCopy(String file)
 	{
+		//查找电脑中所有的图片然后集中放到一个文件夹
 		BufferedOutputStream bos=null;
 		BufferedInputStream bis=null;
 		File f=new File(file);
@@ -30,7 +31,7 @@ class FileCollectionUtil
 					if(str[x].endsWith(".JPG"))
 					{
 						try {
-							bos=new BufferedOutputStream((new FileOutputStream("f:\\�����ĵ�\\jpeg"+str[x])));
+							bos=new BufferedOutputStream((new FileOutputStream("f:\\±¸·ÝÎÄµµ\\jpeg"+str[x])));
 							bis=new BufferedInputStream((new FileInputStream(file+"\\"+str[x])));
 							byte[] b=new byte[1024];
 
